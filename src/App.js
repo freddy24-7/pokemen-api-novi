@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Pokemon from './components/pokemon/Pokemon';
 import Button from './components/button/Button';
-import logo from './assets/logo.png';
+import screenshot from './assets/screenshot.gif';
 import './App.css';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     <div className="poke-deck">
       {pokemons &&
         <>
-          <img alt="logo" width="400px" src={logo} />
+          <img alt="screenshot" width="400px" src={screenshot} />
           <section className="button-bar">
             <Button
               disabled={!pokemons.previous}
